@@ -9,7 +9,7 @@ class Car:
     owner: str
     allTire: List[Tire]
 
-    engineContolLempOil: bool
+    engineContolLampOil: bool
     engineType: str = 'GASOLINE'
     engineControlLampPreIgnited: bool
 
@@ -17,7 +17,7 @@ class Car:
         pass
 
     def se(self) -> bool:
-        if self.engineContolLempOil == False and (self.engineType == 'DIESEL' and self.engineControlLampPreIgnited == True) or self.engineType == 'GASLOINE':
+        if self.engineContolLampOil == False and (self.engineType == 'DIESEL' and self.engineControlLampPreIgnited == True) or self.engineType == 'GASLOINE':
             self.er = True
         else:
             self.er = False
